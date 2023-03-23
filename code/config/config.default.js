@@ -38,7 +38,11 @@ module.exports = appInfo => {
     defaultViewEngine: 'nunjucks',
     defaultExtension: '.nj',
   };
-
+  config.security = {
+    csrf: {
+      enable: false,
+    }
+  };
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
