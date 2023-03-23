@@ -5,6 +5,6 @@
  */
 module.exports = app => {
   const { router, controller } = app;
-  router.get('/create/task', controller.home.createTask);
+  router.post('/create/task', controller.home.createTask);
   router.get('/', controller.home.index);
 };
